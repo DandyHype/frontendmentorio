@@ -1,0 +1,25 @@
+# Avoid accidental upload of the Sketch and Figma design files
+#####################################################
+## Please do not remove lines 5 and 6 - thanks! 🙂 ##
+#####################################################
+*.sketch
+*.fig
+
+# Avoid accidental XD upload if you convert the design file
+###############################################
+## Please do not remove line 12 - thanks! 🙂 ##
+###############################################
+*.xd
+
+# Avoid your project being littered with annoying .DS_Store files!
+.DS_Store
+.prettierignore
+contact-form-main/assets/fonts/Karla-VariableFont_wght.ttf
+contact-form-main/assets/fonts/Karla-Italic-VariableFont_wght.ttf
+contact-form-main/design/desktop-design.jpg
+contact-form-main/design/desktop-preview.jpg
+contact-form-main/design/error-state.jpg
+contact-form-main/design/focus-and-active-state.jpg
+contact-form-main/design/hover-state.jpg
+contact-form-main/design/mobile-design.jpg
+contact-form-main/design/success-state.jpg
