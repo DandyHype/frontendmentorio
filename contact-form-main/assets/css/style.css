@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Karla;
+  src: url(/assets/fonts/static/Karla-Regular.ttf) format(truetype);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Karla;
+  src: url(/assets/fonts/static/Karla-Bold.ttf) format(truetype);
+  font-weight: 700;
+}
+:root {
+  --clr-primary: hsl(148, 38%, 91%);
+  --clr-active: hsl(169, 82%, 27%);
+  --clr-error: hsl(0, 66%, 54%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-500: hsl(186, 15%, 59%);
+  --clr-neutral-900: hsl(187, 24%, 22%);
+  --fnt-main: Open-Sans;
+}/*# sourceMappingURL=style.css.map */

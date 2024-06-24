@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  <script src="assets/scripts/main.js"></script>
+  <title>Frontend Mentor | In-browser markdown editor</title>
+</head>
+<body>
+  <!-- Sidebar start -->
+
+  <button id="myFileList">My Documents</button>
+
+  <button id="newFile">New Document</button>
+
+  <ul class="fileList">
+  </ul>
+
+  
+
+  <!-- Sidebar end -->
+
+  <!-- Header start -->
+
+  Document Name
+  <input type="text" name="documentName" id="">
+
+  
+  <button id="saveFile">Save Changes</button>
+
+  <!-- Header end -->
+
+  <!-- Main start -->
+
+  <main>
+    <textarea name="markdown" id="">
+    </textarea>
+    <md-block>
+
+    </md-block>
+  </main>
+
+  <!-- Main end -->
+</body>
+</html>

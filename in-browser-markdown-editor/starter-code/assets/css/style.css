@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    background-color: aquamarine;
+}
+
+textarea{
+    flex: 1 1 0;
+    border: 1px solid black;
+    resize:none;
+}
+
+md-block {
+    flex: 1 1 0;
+    border: 1px solid black;
+}
+
+ul li{
+    background-color: bisque;
+}
