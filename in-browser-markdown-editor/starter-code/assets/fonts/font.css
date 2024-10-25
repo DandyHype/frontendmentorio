@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Light.ttf);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf) format(truetype);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: RobotoSlab;
+    src: url(RobotoSlab-Light.ttf) format(truetype);
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: RobotoSlab;
+    src: url(RobotoSlab-Regular.ttf) format(truetype);
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: RobotoSlab;
+    src: url(RobotoSlab-Bold.ttf) format(truetype);
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: RobotoMono;
+    src: url(RobotoMono-Regular.ttf) format(truetype);
+    font-weight: 400;
+  }

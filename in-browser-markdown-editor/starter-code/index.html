@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/fonts/font.css">
   <link rel="stylesheet" href="/assets/css/style.css">
   <script type="module" src="https://md-block.verou.me/md-block.js"></script>
   <script src="assets/scripts/main.js"></script>
@@ -13,35 +14,76 @@
 <body>
   <!-- Sidebar start -->
 
-  <button id="myFileList">My Documents</button>
+  <button id="myFileList"></button>
 
-  <button id="newFile">New Document</button>
-
-  <ul class="fileList">
-  </ul>
+  <button id="newFile"></button>
 
   
+
+  <aside style="transform: translateX(-250px);">
+    <header class="side__header">
+      <p class="side__title">My Documents</p>
+    </header>
+    <button class="btn__newDoc" id="saveFile">+ New Document</button>
+    <ul class="fileList">
+    </ul>
+  </aside>
 
   <!-- Sidebar end -->
 
   <!-- Header start -->
 
-  Document Name
-  <input type="text" name="documentName" id="">
+  <header class="header">
+    <section class="header__left">
+      <div class="header__menu">
+        <img src="./assets/icon-menu.svg" alt="" class="menu__icon">
+      </div>
+      <div class="header__logo">
+        <img src="./assets/logo.svg" alt="" class="logo__img">
+      </div>
+      <div class="header__docname">
+        <img src="./assets/icon-document.svg" alt="" class="docname__img">
+        <label for="documentName" class="docname__label">
+          <p>Document Name</p>
+          <input type="text" name="documentName" id="documentName">
+        </label>
+      </div>
+    </section>
+    <section class="header__right">
+      <img src="./assets/icon-delete.svg" alt="" class="delete__img">
+      <button class="btn__save">
+        <img src="./assets/icon-save.svg" alt="" class="save__img">
+        Save Changes
+      </button>
+    </section>
+  </header>
 
   
-  <button id="saveFile">Save Changes</button>
+  <!-- <button id="saveFile">Save Changes</button> -->
 
   <!-- Header end -->
 
   <!-- Main start -->
 
   <main>
-    <textarea name="markdown" id="">
-    </textarea>
-    <md-block>
+    <section class="main__markdown">
+      <header class="markdown__header">Markdown</header>
+      <textarea name="markdown" id="">
+      </textarea>
+    </section>
+    
 
-    </md-block>
+    <section class="main__preview">
+      <header class="preview__header">Preview 
+        <img src="./assets/icon-show-preview.svg" alt="" class="preview__">
+      </header>
+      <md-block>
+
+      </md-block>
+    </section>
+
+    
+
   </main>
 
   <!-- Main end -->

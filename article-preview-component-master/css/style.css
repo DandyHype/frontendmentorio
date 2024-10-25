@@ -1,0 +1,245 @@
+/* ROOT Variables */
+
+:root {
+  --clr-primary: hsl(214, 17%, 51%);
+  --clr-active: hsl(217, 19%, 35%);
+
+  --clr-neutral-800: hsl(217, 19%, 35%);
+  --clr-neutral-500: hsl(214, 17%, 51%);
+  --clr-neutral-300: hsl(212, 23%, 69%);
+  --clr-neutral-200: hsl(210, 46%, 95%);
+  --clr-neutral-100: hsl(210, 46%, 100%);
+  --flt-neutral-100: hue-rotate(210deg) saturate(46%) brightness(200%);
+
+  --fnt-size: 13px;
+  --fnt-primary: Manrope;
+  --fnt-heading: Manrope;
+}
+
+/* RESET CSS */
+* {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  font-family: var(--fnt-primary);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  background-color: var(--clr-neutral-200);
+}
+
+.article__container {
+  display: flex;
+  width: 55%;
+  height: max-content;
+  background-color: var(--clr-neutral-100);
+  box-shadow: 0 4px 45px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.article__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 0 0 1rem;
+  overflow: hidden;
+}
+
+.article__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.article__header {
+  font-family: var(--fnt-heading);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--clr-neutral-800);
+}
+
+.article__message {
+  font-family: var(--fnt-primary);
+  font-size: var(--fnt-size);
+  font-weight: 500;
+  color: var(--clr-primary);
+}
+
+.article__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article__author {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.author__avatar {
+  border-radius: 100%;
+  height: auto;
+  width: auto;
+  max-height: 4rem;
+}
+
+.author__namedate {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.author__name {
+  color: var(--clr-active);
+}
+
+.article__date {
+  color: var(--clr-neutral-300);
+}
+
+.article__share {
+  display: block;
+  position: relative;
+}
+
+.share__btn {
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--clr-neutral-200);
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.share__btn:hover {
+  background-color: var(--clr-active);
+}
+
+.share__btn:hover img {
+  filter: var(--flt-neutral-100);
+}
+
+.share__popup {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--clr-active);
+  color: var(--clr-neutral-300);
+  font-family: var(--fnt-primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: -5rem;
+  left: -6.3rem;
+
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease-in-out;
+}
+
+.share__popup::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 15px;
+  border-style: solid;
+  border-color: var(--clr-active) transparent transparent transparent;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+@media only screen and (max-width: 376px) {
+  body {
+    height: auto;
+  }
+
+  .article__container {
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .article__details {
+    padding-bottom: 0.5rem;
+  }
+
+  .article__image {
+    height: 80%;
+  }
+
+  .article__image img {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .article__header {
+    font-size: 0.875rem;
+  }
+
+  .author__avatar {
+    max-height: 3rem;
+  }
+
+  .author__name {
+    font-size: 0.75rem;
+  }
+
+  .article__date {
+    font-size: 0.625rem;
+  }
+
+  .share__btn {
+    z-index: 9;
+  }
+
+  .share__popup {
+    padding: 1.5rem 2rem;
+    width: 600px;
+    height: 70px;
+    border-radius: 0;
+    box-shadow: none;
+    top: -1.2rem;
+    left: -18rem;
+    transition: all 0.1s ease-in-out;
+    z-index: 8;
+  }
+
+  .share__popup::after {
+    display: none;
+  }
+
+  .hide {
+    transition: all 0.1s ease-in-out;
+  }
+}
