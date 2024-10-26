@@ -45,7 +45,7 @@ body {
 
 .article__container {
   display: flex;
-  width: 47%;
+  width: 50%;
   gap: 1rem;
   background-color: var(--clr-neutral-100);
   box-shadow: 0 4px 45px rgba(0, 0, 0, 0.1);
