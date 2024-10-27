@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script defer src="./assets/js/index.js"></script>
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+
+  <main class="newsletter__card">
+    <section class="card__img">
+      <picture>
+        <source media="(min-width: 376px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+    </section>
+    <section class="card__description">
+      <div class="card__info">
+        <h1 class="card__title">Stay updated!</h1>
+        <p class="card__message">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="card__list">
+          <li class="list__item">Product discovery and building what matters</li>
+          <li class="list__item">Measuring to ensure updates are a success</li>
+          <li class="list__item">And much more!</li>
+        </ul>
+      </div>
+      <form novalidate class="card__form">
+        <label for="email">Email address</label>
+        <span class="form__errormsg">Valid email required</span>
+        <input class="form__input" id="email" name="email" type="email" placeholder="email@company.com">
+        <button id="form__btn">Subscribe to monthly newsletter</button>
+      </form>
+    </section>
+  </main>
+
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
