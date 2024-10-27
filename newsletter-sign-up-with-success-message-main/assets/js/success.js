@@ -8,5 +8,5 @@ if(email){
         }
 
 dismissBtn.addEventListener('click', () => {
-    window.location.href = "/index.html"
+    window.location.href = "frontendmentorio/newsletter-sign-up-with-success-message-main/index.html"
 })
