@@ -80,7 +80,7 @@ function submitForm(isValid, mailAdress){
     if(isValid){
         emailInput.classList.remove('form__error');
         errorMsg.classList.remove('visible');
-        window.location.href = "frontendmentorio/newsletter-sign-up-with-success-message-main/success.html?email=" + mailAdress;
+        window.location.href = "/success.html?email=" + mailAdress;
     }
     else{
         emailInput.classList.add('form__error');
