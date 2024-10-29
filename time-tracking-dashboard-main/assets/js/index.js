@@ -6,7 +6,7 @@ const prevText = {"Daily":"Yesterday", "Weekly":"Last Week", "Monthly":"Last Mon
 
 
   function refreshDashboard(){
-    fetch('/data.json').then((request) => {  
+    fetch('./data.json').then((request) => {  
         if(!request.ok) {
           console.log('Oops! Something went wrong.');
           return null;
