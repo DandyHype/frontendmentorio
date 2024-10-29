@@ -1,0 +1,196 @@
+:root {
+  --clr-primary: hsl(246, 80%, 60%);
+
+  --clr-card-work: hsl(15, 100%, 70%);
+  --clr-card-play: hsl(195, 74%, 62%);
+  --clr-card-study: hsl(348, 100%, 68%);
+  --clr-card-exercise: hsl(145, 58%, 55%);
+  --clr-card-social: hsl(264, 64%, 52%);
+  --clr-card-selfcare: hsl(43, 84%, 65%);
+
+  --clr-neutral-900: hsl(226, 43%, 10%);
+  --clr-neutral-700: hsl(235, 46%, 20%);
+  --clr-neutral-400: hsl(235, 45%, 61%);
+  --clr-neutral-200: hsl(236, 100%, 87%);
+
+  --fnt-family-main: Rubik;
+  --fnt-size-card: 18px;
+
+  --scr-size-dkt: 1440px;
+  --scr-size-mbl: 375px;
+}
+
+
+* {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  font-family: var(--fnt-family-main);
+}
+
+
+html,
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--clr-neutral-900);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--scr-size-dkt);
+}
+
+.dashbord__container{
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+}
+
+.dashboard__profile{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: var(--clr-neutral-700);
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+.profile__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 2rem 2rem;
+    background-color: var(--clr-primary);
+    border-radius: 1rem;
+}
+
+.profile__avatar{
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.avatar__img{
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile__description{
+    color: var(--clr-neutral-400);
+    margin-bottom: .5rem;
+}
+
+.profile__name{
+    color: var(--clr-neutral-200);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.profile__options{
+    padding: 0rem 2rem 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.options__list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+.options__list a{
+    color:var(--clr-neutral-400);
+    text-decoration: none;
+}
+
+.dashbord__cards{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+
+}
+
+.cards__card{
+    width: 1fr;
+    height: 1fr;
+    background-color: var(--clr-card-play);
+    background-image: url("../../images/icon-exercise.svg");
+    background-repeat: no-repeat;
+    background-position: top -.2rem right 1rem;
+    border-radius: 1rem;
+}
+
+.cards__card[data-activity=Work]{
+    background-color: var(--clr-card-work);
+    background-image: url("../../images/icon-work.svg");
+}
+.cards__card[data-activity=Play]{
+    background-color: var(--clr-card-play);
+    background-image: url("../../images/icon-play.svg");
+}
+.cards__card[data-activity=Study]{
+    background-color: var(--clr-card-study);
+    background-image: url("../../images/icon-study.svg");
+}
+.cards__card[data-activity=Exercise]{
+    background-color: var(--clr-card-exercise);
+    background-image: url("../../images/icon-exercise.svg");
+}
+.cards__card[data-activity=Social]{
+    background-color: var(--clr-card-social);
+    background-image: url("../../images/icon-social.svg");
+}
+.cards__card[data-activity="Self Care"]{
+    background-color: var(--clr-card-selfcare);
+    background-image: url("../../images/icon-self-care.svg");
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--clr-neutral-700);
+    border-radius: .8rem;
+    margin-top: 3rem;
+    height: calc(100% - 3rem);
+}
+
+.card__title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title__text{
+    color: var(--clr-neutral-200);
+    font-size: var(--fnt-size-card);
+}
+
+.card__hours{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hours__now{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--clr-neutral-200);
+}
+
+.hours__past{
+    font-size: .650rem;
+    font-weight: 500;
+    color: var(--clr-neutral-400);
+}
