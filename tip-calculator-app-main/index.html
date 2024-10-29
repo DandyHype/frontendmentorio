@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/fonts/fonts.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script defer src="./assets/js/index.js"></script>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header class="app__header">
+    <picture class="app__logo">
+      <img class="logo__img" src="./images/logo.svg" alt="">
+    </picture>
+  </header>
+
+  <main class="calculator__container">
+    <form action="" class="calculator__form">
+      <div class="form__bill">
+        <label class="bill__label" for="bill">Bill</label>
+        <input type="text" name="bill" id="bill__input" placeholder="0">
+      </div>
+      <div class="form__tip">
+        <label class="tip__label" for="tip">Select Tip %</label>
+        <ul class="tip__list">
+          <li class="tip__option"><button class="option__btn">5%</button></li>
+          <li class="tip__option"><button class="option__btn">10%</button></li>
+          <li class="tip__option"><button class="option__btn">15%</button></li>
+          <li class="tip__option"><button class="option__btn">25%</button></li>
+          <li class="tip__option"><button class="option__btn">50%</button></li>
+          <li class="tip__option"><input type="text" id="option__custom" placeholder="Custom"></li>
+        </ul>
+      </div>
+      <div class="form__nmbofppl">
+        <label class="nmbofppl__label" for="nmbofppl">Number of People</label>
+        <input type="text" id="nmbofppl__input" placeholder="0">
+      </div>
+    </form>
+    <section class="calculator_screen">
+      <div class="screen__results">
+        <div class="result__option">
+          <div class="option__description">
+            <p class="option__title">Tip Amount</p>
+            <span class="option__subtitle">/ person</span>
+          </div>
+          <span class="option__amount">$0.00</span>
+        </div>
+        <div class="result__option">
+          <div class="option__description">
+          <p class="option__title">Total</p>
+            <span class="option__subtitle">/ person</span>
+          </div>
+          <span class="option__amount">$0.00</span>
+        </div>
+      </div>
+      <div class="screen__reset">
+        <button class="reset__btn">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

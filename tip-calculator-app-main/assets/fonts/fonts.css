@@ -1,0 +1,5 @@
+@font-face {
+    font-family: "Mono Space";
+    src: url('./SpaceMono-Bold.ttf') format(truetype);
+    font-weight: 700;
+}
