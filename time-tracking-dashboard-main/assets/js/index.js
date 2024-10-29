@@ -44,7 +44,11 @@ const prevText = {"Daily":"Yesterday", "Weekly":"Last Week", "Monthly":"Last Mon
   tfMenu.forEach((link) => {
     link.addEventListener('click', function(e){
         e.preventDefault();
+        tfMenu.forEach((link) =>{
+            link.dataset.active = 'false';
+        })
         timeFrame = e.target.textContent;
+        e.target.dataset.active = 'true';
         refreshDashboard();
     });
   });
