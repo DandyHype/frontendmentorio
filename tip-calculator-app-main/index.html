@@ -26,7 +26,7 @@
   </header>
 
   <main class="calculator__container">
-    <form action="" class="calculator__form">
+    <form class="calculator__form">
       <div class="form__bill">
         <label class="bill__label" for="bill">Bill</label>
         <input type="text" name="bill" id="bill__input" placeholder="0">
@@ -43,25 +43,29 @@
         </ul>
       </div>
       <div class="form__nmbofppl">
-        <label class="nmbofppl__label" for="nmbofppl">Number of People</label>
-        <input type="text" id="nmbofppl__input" placeholder="0">
+        <div class="flex-sb">
+          <label class="nmbofppl__label" for="nmbofppl">Number of People</label>
+        <span class="form__errormsg" data-error="false">Can't be 0</span>
+        </div>
+        
+        <input type="text" id="nmbofppl__input" data-error="false" placeholder="0">
       </div>
     </form>
-    <section class="calculator_screen">
+    <section class="calculator__screen">
       <div class="screen__results">
         <div class="result__option">
           <div class="option__description">
             <p class="option__title">Tip Amount</p>
             <span class="option__subtitle">/ person</span>
           </div>
-          <span class="option__amount">$0.00</span>
+          <span class="option__amount" id="tip__amount">$0.00</span>
         </div>
         <div class="result__option">
           <div class="option__description">
           <p class="option__title">Total</p>
             <span class="option__subtitle">/ person</span>
           </div>
-          <span class="option__amount">$0.00</span>
+          <span class="option__amount" id="total__amount">$0.00</span>
         </div>
       </div>
       <div class="screen__reset">

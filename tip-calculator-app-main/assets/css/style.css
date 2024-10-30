@@ -1,5 +1,6 @@
 :root{
 --clr-primary: hsl(172, 67%, 45%);
+--clr-error: hsl(15, 100%, 70%);
 
 --clr-neutral-900: hsl(183, 100%, 15%);
 --clr-neutral-700: hsl(186, 14%, 43%);
@@ -22,11 +23,11 @@
     padding: 0;
 }
 
+
 html{
     height: 100%;
     display: flex;
     justify-content: center;
-    /* background-color: white; */
 }
 
 body{
@@ -78,7 +79,7 @@ body{
 #nmbofppl__input{
     text-align: end;
     border: none;
-    background-color: var(--clr-neutral-200);
+    background-color: var(--clr-neutral-300);
     cursor: pointer;
     font-size: 1.5rem;
     line-height: 2.5rem;
@@ -136,15 +137,22 @@ body{
     cursor: pointer;
 }
 
+.option__btn:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-900);
+    opacity: 0.7;
+}
+
 .option__btn[data-active="true"]{
     background-color: var(--clr-primary);
     color: var(--clr-neutral-900);
+    opacity: 1;
 }
 
 #option__custom{
     height: 100%;
     width: 100%;
-    background-color: var(--clr-neutral-200);
+    background-color: var(--clr-neutral-300);
     border: none;
     border-radius: .2rem;
     font-family: var(--fnt-primary);
@@ -170,14 +178,26 @@ body{
     gap: .2rem;
 }
 
+.form__errormsg{
+    color: var(--clr-error);
+    opacity: 0;
+}
+.form__errormsg[data-error="true"]{
+    opacity: 1;
+}
+
 #nmbofppl__input{
     background-image: url(../../images/icon-person.svg);
     background-repeat: no-repeat;
     background-position: 3% 50%;
 }
 
+#nmbofppl__input[data-error="true"]{
+    outline: 1px solid var(--clr-error);
+}
 
-.calculator_screen{
+
+.calculator__screen{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -233,6 +253,58 @@ body{
 }
 
 .reset__btn[data-active="true"]{
-    opacity: 1;
+    opacity: 0.7;
     cursor: pointer;
+}
+.reset__btn[data-active="true"]:hover{
+    opacity: 1;
+}
+
+.flex-sb{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1340px) {
+
+    body{
+        margin-top: 3rem;
+        justify-content: space-between;
+        width: var(--scr-size-mbl);
+        max-width: var(--scr-size-mbl);
+    }
+    
+    .calculator__container{
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+    
+
+    
+    .calculator__form{
+        max-width: 100%;
+        gap: 1.5rem;
+    }
+  
+
+    .tip__list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+   
+.calculator__screen{
+    gap: 2rem;
+    width: 100%;
+}
+
+.screen__results{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
 }
