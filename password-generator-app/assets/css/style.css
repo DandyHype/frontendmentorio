@@ -95,6 +95,9 @@ body {
   fill: var(--clr-green);
   cursor: pointer;
 }
+.copy__svg:hover{
+  fill: var(--clr-text-primary);
+}
 
 .generator__form {
   display: flex;
