@@ -1,0 +1,92 @@
+<main class="main__app">
+
+
+    <header class="app__header">
+      <div class="header__option">
+        <div class="option__bg">
+          <img
+            class="option__img"
+            src="./assets/images/icon-accessibility.svg"
+            alt=""
+          />
+        </div>
+        <p class="option__name">Accessibility</p>
+      </div>
+      <div class="header__switch">
+        <img
+          class="switch__lightimg"
+          src="./assets/images/icon-sun-dark.svg"
+          alt=""
+        />
+        <label class="switch__checkbox">
+          <input type="checkbox" name="theme switcher" id="theme__switch" />
+          <div class="custom__switch">
+            <div class="switch__thumb"></div>
+          </div>
+        </label>
+        <img
+          class="switch__darkimg"
+          src="./assets/images/icon-moon-dark.svg"
+          alt=""
+        />
+      </div>
+    </header>
+
+
+    <section class="app__body">
+      <div class="app__description">
+        <div class="description__text">
+          <p class="text__questnumber">Question 6 of 10</p>
+          <h3 class="text__question">
+            Which of these color contrast ratios defines the minimum WCAG 2.1
+            Level AA requirement for normal text?
+          </h3>
+        </div>
+        <div class="description__progressbar">
+          <div class="progressbar__fill"></div>
+        </div>
+      </div>
+      <div class="app__options">
+        <div class="options__container">
+
+          <label for="" class="options__option">
+            <input class="option__radio" type="radio" name="" id="">
+            <div class="option__bg">
+              <p class="letter__char">A</p>
+            </div>
+            <p class="option__name">4.5 : 1</p>
+        </label>
+
+          <div class="options__option" data-attribute="correct">
+            <div class="option__bg">
+              <p class="letter__char">B</p>
+            </div>
+            <p class="option__name">3 : 1</p>
+            <img class="success__img" src="./assets/images/icon-correct.svg" alt="">
+          </div>
+          <div class="options__option" data-attribute="incorrect">
+            <div class="option__bg">
+              <p class="letter__char">C</p>
+            </div>
+            <p class="option__name">2.5 : 1</p>
+            <img class="fail__img" src="./assets/images/icon-incorrect.svg" alt="">
+          </div>
+          <div class="options__option" data-attribute="selected">
+            <div class="option__bg">
+              <p class="letter__char">D</p>
+            </div>
+            <p class="option__name">5 : 1</p>
+          </div>
+        </div>
+        <div class="app__submit">
+          <div class="submit__btn">Submit answer</div>
+        </div>
+        <div class="error__message">
+          <img src="./assets/images/icon-error.svg" alt="" class="error__img">
+          <p class="error__text">Please select an answer</p>
+        </div>
+      </div>
+    </section>
+
+
+  </main>

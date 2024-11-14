@@ -1,0 +1,38 @@
+:root{
+    /* COLORS */
+
+     --clr-shadow: rgba(49, 62, 81, 0.14);
+
+    --clr-bg: hsl(216, 25%, 25%);
+    --clr-bg-option: hsl(215, 27%, 32%);
+
+
+    --clr-text-primary: hsl(0, 0%, 100%);
+    --clr-text-secondary: hsl(216, 47%, 78%);
+
+    --clr-bg-letter: hsl(220, 38%, 97%);
+    --clr-letter: hsl(219, 13%, 44%);
+    --clr-letter-checked: hsl(0, 0%, 100%);
+
+}
+
+
+
+body{
+    background: url('../images/pattern-background-desktop-dark.svg') no-repeat 0 0px,
+    var(--clr-bg);
+}
+
+@media screen and (max-width: 1399px){
+    body{
+        background: url('../images/pattern-background-tablet-dark.svg') no-repeat 0 0px,
+        var(--clr-bg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        background: url('../images/pattern-background-mobile-dark.svg') no-repeat 0 0px,
+        var(--clr-bg);
+    }
+}
