@@ -1,0 +1,55 @@
+:root{
+  /* FONTS */
+    --fnt-fallback: 'Arial', sans-serif;
+    --fnt-heading-XL: 800 72px/72px var(--fnt-fallback);
+    --fnt-heading-L: 700 32px/32px var(--fnt-fallback);
+    --fnt-heading-M: 700 24px/24px var(--fnt-fallback);
+    --fnt-body-B: 700 18px/18px var(--fnt-fallback);
+    --fnt-body: 500 18px/18px var(--fnt-fallback);
+
+    --gradient-1: linear-gradient(to bottom, #7755FF 0%, #6943FF 0%, #2F2CE9 100%);
+    --gradient-2:  linear-gradient(to bottom,rgba(77, 33, 201, 1) 0%,    rgba(37, 33, 201, 0) 100%,    rgba(37, 33, 201, 0) 100%);
+
+}
+
+
+html,
+body {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECF2FF;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+      display: grid;
+      grid-template-rows: 1fr;
+      justify-content: center;
+      align-items: start;
+      background-color: #FFFFFF;
+    }
+ 
+}
