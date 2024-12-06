@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Jakarta Medium";
+  src: url(/assets/fonts/static/PlusJakartaSans-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Jakarta Bold";
+  src: url(/assets/fonts/static/PlusJakartaSans-Bold.ttf) format("truetype");
+}
+
+
+:root {
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+
+  --clr-Lime: hsl(61, 70%, 52%);
+  --clr-Lime-15: hsla(61, 70%, 52%, .15);
+  --clr-Red: hsl(4, 69%, 50%);
+  --clr-White: hsl(0, 0%, 100%);
+  --clr-Slate-900: hsl(202, 55%, 16%);
+  --clr-Slate-700: hsl(200, 24%, 40%);
+  --clr-Slate-500: hsl(200, 26%, 54%);
+  --clr-Slate-300: hsl(203, 41%, 72%);
+  --clr-Slate-100: hsl(202, 86%, 94%);
+
+  /* Typography */
+  --fnt-Jakarta-Medium: "Jakarta Medium";
+  --fnt-Jakarta-Bold: "Jakarta Bold";
+
+  --text-preset-1: 56px / 125% var(--fnt-Jakarta-Bold); 
+  --text-preset-2: 24px / 125% var(--fnt-Jakarta-Bold); 
+  --text-preset-3: 18px / 125% var(--fnt-Jakarta-Bold); 
+
+  --text-preset-4: 16px / 150% var(--fnt-Jakarta-Medium); 
+  --text-preset-5: 14px / 150% var(--fnt-Jakarta-Medium); 
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-Slate-100);
+}
+
+input{
+  font: inherit;
+  font-weight: inherit;
+}
+
+
+
+@media (prefers-color-scheme: light) {
+
+}

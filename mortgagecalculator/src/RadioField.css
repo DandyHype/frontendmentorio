@@ -1,0 +1,60 @@
+p {
+  font: var(--text-preset-4);
+  font-weight: 500;
+  color: var(--clr-Slate-700);
+}
+
+.radio_label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  font: var(--text-preset-3);
+  color: var(--clr-Slate-900);
+  width: 100%;
+  letter-spacing: -1px;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 12.5px 16px;
+  gap: 16px;
+  border: 1px solid var(--clr-Slate-500);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.form_radios {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form_radios input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+}
+
+.form_radios input[type="radio"]::after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid var(--clr-Slate-900);
+    cursor: pointer;
+    visibility: visible;
+  }
+
+  .form_radios  input[type="radio"]:checked::after {
+    background: radial-gradient(var(--clr-Lime) 0%, var(--clr-Lime) 40%, transparent 50%, transparent);
+    border-color: var(--clr-Lime);
+  }
+  .form_radios input[type="radio"]:checked {
+    color: var(--clr-Lime);
+  }
+
+  .radio_label:has(input[type="radio"]:checked ){
+    border-color: var(--clr-Lime);
+    background-color: var(--clr-Lime-15);
+  }

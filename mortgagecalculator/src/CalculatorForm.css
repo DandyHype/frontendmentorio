@@ -1,0 +1,143 @@
+form{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    font: var(--text-preset-2);
+    color: var(--clr-Slate-900);
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font: var(--text-preset-4);
+    color: var(--clr-Slate-700);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 504px 504px;
+    gap: 40px;
+    overflow: hidden;
+    border-radius: 24px;
+    background-color: var(--clr-White);
+    box-shadow: 0 32px 64px 0 rgba(19, 48, 65, 0.1);
+}
+
+.calculator_options{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.mortgage_type{
+    display: flex;
+    gap: 24px;
+}
+
+.submit_btn{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    background-color: var(--clr-Lime);
+    color: var(--clr-Slate-900);
+    font: var(--text-preset-3);
+    text-decoration: none;
+    padding: 16px 40px;
+    border-radius: 999px;
+}
+
+.results_section{
+    display: grid;
+    flex: 1;
+    padding: 40px;
+    background-color: var(--clr-Slate-900);
+    border-radius: 0px 0px 0px 80px;
+}
+
+.results_wrapper{
+    display: flex;
+    align-self: center;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result_title{
+    font: var(--text-preset-2);
+    color: var(--clr-White);
+}
+
+.result_description{
+    font: var(--text-preset-4);
+    color: var(--clr-Slate-300);
+    text-align: center;
+    text-wrap:pretty;
+}
+
+.results_wrappersolved{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: start;
+}
+
+.wrappersolved_header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.result_descriptionsolved{
+    font: var(--text-preset-4);
+    color: var(--clr-Slate-300);
+    text-align: start;
+    text-wrap:pretty;
+}
+
+.payments_card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 32px;
+    background-color: #0E2431;
+    border-radius: 8px;
+    border-top: 4px solid #D8DB2F;
+}
+
+.payments_cardsection{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.payments_divisor{
+    width: 100%;
+    border: 1px solid #304A5A;
+}
+
+.payment_amount{
+    font: var(--text-preset-1);
+    line-height: 125%;
+    color: var(--clr-Lime);
+}
+.payment_anual{
+    font: var(--text-preset-2);
+    line-height: 125%;
+    color: var(--clr-White);
+}
